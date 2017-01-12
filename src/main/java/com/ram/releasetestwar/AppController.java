@@ -19,4 +19,9 @@ public class AppController {
 		return "Hello World";
 	}
 	
+	@RequestMapping(value ="/address", method=RequestMethod.GET)
+    public String getAddress(HttpServletRequest request, HttpServletResponse response ){
+        return "123 Main Street";
+    }
+	
 }
